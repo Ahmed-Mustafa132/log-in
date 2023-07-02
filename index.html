@@ -1,55 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Login Page</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>game</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div class="login-box">
-		<h2>Login Here</h2>
-		<form id="login-form">
-			<div class="textbox">
-				<input type="text" name="" required="">
-				<label>Username</label>
-			</div>
-
-			<div class="textbox">
-				<input type="password" name="" required="">
-				<label>Password</label>
-			</div>
-
-			<input class="btn" type="button" name="" value="Sign In">
-
-			<a href="#" id="forgot-password-link">Forgot Password?</a>
-
-			<p>Don't have an account? <a href="#" id="register-link">Register here</a></p>
-		</form>
-
-		<form id="register-form" style="display: none;">
-			<div class="textbox">
-				<input type="text" name="" required="">
-				<label>Username</label>
-			</div>
-
-			<div class="textbox">
-				<input type="email" name="" required="">
-				<label>Email Address</label>
-			</div>
-
-			<div class="textbox">
-				<input type="password" name="" required="">
-				<label>Password</label>
-			</div>
-
-			<input class="btn" type="button" name="" value="Register">
-
-			<p>Already have an account? <a href="#" id="login-link">Login here</a></p>
-			
-		</form>
-		
-	</div>
-
-<script type="text/javascript" src="script.js"></script>
-
+    <div id="game">
+        <div id="left"></div>
+        <div id="right"></div>
+        <div id="block"> <img src="trun.jpg" alt=""></div>
+        <div id="character"> <img src="hero.jpg" alt=""></div>
+        <div id="white"></div>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
