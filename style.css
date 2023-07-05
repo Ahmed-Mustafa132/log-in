@@ -5,6 +5,23 @@
 img{
     width: 100px;
 }
+#gameScore{ 
+    width: max-content;
+    margin: auto;
+    background-color: rgb(186, 171, 171);
+    border-radius: 0 0 10% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#gameScore div{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: solid 1px rgb(0, 0, 0);
+}
 #game{
     width: 300px;
     height: 500px;
@@ -19,10 +36,11 @@ img{
     position: relative;
     top: 300px;
     left: 0px;
+    z-index: 98;
 }
 #white{
     top: 500px;
-    z-index: 100;
+    z-index: 97;
     position: absolute;
     width: 300px;
     height: 130px;
@@ -32,10 +50,17 @@ img{
     width: 100px;
     height: 100px;
     top: 500px;
+    left: 200px;
     background-color: black;
     position: relative;
-    animation: slide 1s infinite linear;
+    animation:  none;
     z-index: 99;
+}
+#play{
+    width:300px ;
+    height: 50px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #a0f19f 0%, #92e87d 100%);
 }
 @keyframes slide{
     0%{top:-100px};
